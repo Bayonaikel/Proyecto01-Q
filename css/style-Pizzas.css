@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: calc(5px + 1vw);
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0vw auto;
+    background-image: linear-gradient(to right, rgb(255, 215, 0) ,rgb(255, 215, 0),rgb(255, 215, 0),rgb(255, 215, 0)  ,rgb(180, 255, 255),rgb(180, 255, 255));
+    overflow-x: hidden;
+}
+
+.header{
+    position: fixed;
+    z-index: 1000;
+}
+
+
+.Marca {
+    display: flex;
+    width: 100vw;
+    background-image: linear-gradient(to right, rgb(255, 215, 0) ,rgb(255, 215, 0),rgb(255, 215, 0),rgb(255, 215, 0)  ,rgb(180, 255, 255),rgb(180, 255, 255));
+    margin: 0vw;
+    margin-bottom: 2vw;
+    position: fixed;
+    z-index: 100;
+}
+
+.LogotipoEmpresa {
+    width: calc(10px + 9vw);
+    height: calc(10px + 9vw);
+    padding-top: 1vw;
+    padding-left: 1vw;
+}
+
+.NombreEmpresa {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3.5vw;
+    align-self: center;
+    margin-left: 2vw; 
+}
+
+/* *******************************************************************   Navegacion   ************************************************************** */
+
+.BarraMenu{
+    position: fixed;
+    z-index: 100;
+    padding-top: 10vw;
+}
+
+
+.nav{
+    width: 100vw;
+    height: 3vw;
+}
+
+.nav__ul{
+    width: 100vw;
+    font-family: 'Bangers', cursive;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to right, rgb(255, 215, 0) ,rgb(255, 215, 0),rgb(255, 215, 0),rgb(255, 215, 0)  ,rgb(180, 255, 255),rgb(180, 255, 255));
+    height: 2vw;
+    list-style: none;
+    display: flex;
+    text-align: left;
+    line-height: 2vw;
+}
+
+.nav__ul__li{
+    position: relative;
+    margin-left: 2vw;
+}
+
+.nav__ul__li i{
+    position: relative;
+    text-align: right;
+    margin-right: 0.2vw;
+    box-sizing: border-box;
+}
+
+.nav__ul__li > a{
+    position: relative;
+    display: inline-block;
+    padding: 0.1vw;
+    color: black;
+    text-decoration: none;
+}
+
+.nav__ul__li a:hover{
+    background-color: rgb(0, 100, 255);
+    color: rgb(255, 215, 0);
+    transition: all 0.3s;
+}
+
+.nav__ul__li:hover .nav__ul__li__SubmenuCARTA{
+    visibility: visible;
+    opacity: 1;
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 0vw;
+    margin-left: 1vw;
+}
+
+/* .nav__ul__li:hover .nav__ul__li__SubmenuPEDIDOS{
+    visibility: visible;
+    opacity: 1;
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+} */
+
+/* ******************************************************************   SubmenuCarta   ************************************************************* */
+
+.nav__ul__li__SubmenuCARTA{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    margin-top: 1.5vw;
+    list-style: none;
+    text-decoration: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.nav__ul__li__SubmenuCARTA__li{
+    display: block;
+    position: relative;
+    width: 14vw;
+    margin-right: calc(0.2vw + 5px);
+    background-image: linear-gradient(to right, rgb(255, 215, 0),rgba(255, 215, 0, 0.2) , rgba(150, 255, 255, 0.9), rgba(150, 255, 255, 0.8), rgba(150, 255, 255, 0.7) ,rgba(150, 255, 255, 0.6),rgba(150, 255, 255, 0.4),rgba(150, 255, 255, 0.2),rgb(255, 215, 0));
+    color: rgb(0, 0, 0);
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav__ul__li__SubmenuCARTA__li > i{
+    text-align: center;
+    width: 1vw;
+    padding: 0.2vw;
+    margin-left: 0.2vw;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav__ul__li__SubmenuCARTA__li > a{
+    font-size: calc(3px + 1vw);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 1.5vw;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* *****************************************************************   SubmenuPedidos   ************************************************************* */
+
+/* .nav__ul__li__SubmenuPEDIDOS{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    margin-top: 1.5vw;
+    list-style: none;
+    text-decoration: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.nav__ul__li__SubmenuPEDIDOS__li{
+    display: block;
+    position: relative;
+    width: 11vw;
+    margin-right: 0.5vw;
+    background-image: linear-gradient(to right,rgba(255, 215, 0, 0.1), rgb(150, 255, 255),rgba(255, 215, 0, 0.8) ,rgba(255, 215, 0, 0.6) ,rgba(255, 215, 0, 0.4) ,rgba(255, 215, 0, 0.2),rgba(255, 215, 0, 0.1),rgba(255, 215, 0, 0));      
+    color: rgb(0, 0, 0);
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav__ul__li__SubmenuPEDIDOS__li > i{
+    text-align: center;
+    width: 1vw;
+    padding: 0.2vw;
+    margin-left: 0.2vw;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav__ul__li__SubmenuPEDIDOS__li > a{
+    font-size: calc(3px + 1vw);
+    text-align: center;
+    margin-left: 1.5vw;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+} */
+
+/* ****************************************************************   NavegaciónLateral   *********************************************************** */
+
+.resp-nav__ul{
+    display: none;
+}
+
+.resp-nav__ul__li-container{
+    display: block;
+    position: absolute; 
+    margin-top: 0vw;
+    float: left;
+}
+
+.resp-nav__ul__li-container li{
+    display: block;
+    position: relative;
+    font-size: calc(3px + 3vw);
+}
+
+.resp-nav__ul__li-container li i{
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    font-size: 3vw;
+    text-align: right;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    padding: 1vw;
+    width: 4vw;
+}    
+
+.resp-nav__ul__li-container li a{
+    display: inline-block;
+    position: relative;
+    font-size: 3vw;
+    text-align: left;
+    margin-left: 1.5vw;
+    list-style: none;
+    text-decoration: none;
+    width: 15vw;
+} 
+
+.resp-nav__ul__li__SubmenuCARTA{
+    display: flex;
+    float: left;
+    position: static;
+    width: 40vw;
+    box-sizing: content-box;
+}
+
+/* #resp-nav__ul__li__SubmenuPEDIDOS{
+    display: flex;
+    float: left;
+    position: static;
+    width: 12vw;
+    box-sizing: content-box;
+} */
+
+.resp-nav__ul__li__SubmenuCARTA__li{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    position: static;
+    text-align: left;
+    margin-right: 1vw;
+} 
+
+/* .resp-nav__ul__li__SubmenuPEDIDO__li{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    position: static;
+    text-align: left;
+    margin-right: 1vw;
+} */
+
+/* ****************************************************************   ResponsiveDesing   ************************************************************ */
+
+@media screen and (max-width: 500px) {
+    .nav__ul {
+        display: none;
+    }
+    .navigation{
+        height: 5vw;
+        width: 100vw;
+    }
+    .resp-nav__ul {
+        display: block;
+        position: absolute;
+        width: 100vw;
+        height: 5vw;
+        margin-left: 1vw;
+    }
+
+    .resp-nav-button-container{
+        position:  relative;
+        width: 100vw;
+        font-size: 5vw;
+        margin-left: 2vw;
+        margin-bottom: 0vw;
+    }
+
+    .resp-nav-button i{
+        padding: 5vw, 10vw;
+        text-align: left;
+        margin-left: 1vw;
+    }
+
+    .resp-nav__ul__li-container{
+        display: none;
+    }
+
+    .resp-nav__ul__li__SubmenuCARTA{
+        display: none;
+    }
+
+    /* .resp-nav__ul__li__SubmenuPEDIDOS{
+        display: none;
+    } */
+}   
+
+/* ****************************************************************   AlPasarPorEncima   ************************************************************ */
+
+.resp-nav__ul:hover .resp-nav__ul__li-container {
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 1vw;
+}
+
+.resp-nav__ul:hover .resp-nav__ul__li__SubmenuCARTA{
+    display: none;
+}
+
+/* .resp-nav__ul:hover .resp-nav__ul__li__SubmenuPEDIDOS{
+    display: none;
+} */
+
+.resp-nav__ul:hover .Carta:hover .resp-nav__ul__li__SubmenuCARTA{
+    display: inline-flex;
+    flex-direction: column;
+    position: absolute;
+    float: left;
+    text-align: left;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* .resp-nav__ul:hover .Pedidos:hover .resp-nav__ul__li__SubmenuPEDIDOS{
+    display: inline-flex;
+    flex-direction: column;
+    position: absolute;
+    float: left;
+    text-align: left;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: content-box;
+} */
+
+.resp-nav__ul:hover .Carta:hover .resp-nav__ul__li__SubmenuCARTA__li a{
+    width: 30vw;
+}
+
+/* .resp-nav__ul:hover .Pedidos:hover .resp-nav__ul__li__SubmenuPEDIDOS__li a{
+    width: 30vw;
+} */
+
+/* ****************************************************************   Pizzas   ************************************************************ */
+
+.Pizzas{
+    height: 100vw;
+    width: 100vw;
+    display: block;
+    position: absolute;
+    margin: 5vw, 20vw, 5vw,20vw;
+    padding-left: 15vw;
+    padding: 15vw;
+    float: none;
+    list-style: none;
+    text-decoration: none;
+    z-index: -1;
+}
+
+.Pizzas li{
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.Pizzas li h2{
+    display: block;
+    position: relative;
+    margin: 10vw, 0vw, 20vw,20vw;
+    padding-top: 1vw;
+    padding-left: 60vw;
+    padding-right: 0vw;
+    padding-bottom: 1vw;
+    float: center;
+    text-align: left;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2vw;
+    width: 100vw;
+    height: 5vw;
+    line-height: 5vw;
+}
+
+.Pizzas li img{
+    height: 25vw;
+    width: 25vw;
+    display: inline-flex;
+    margin-left: 5vw;
+    padding-left: 0vw;
+    padding-right: 0vw;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1vw;
+    position: relative;
+}
+
+.Pizzas li h3{
+    height: 25vw;
+    width: 25vw;
+    line-height: 13vw;
+    list-style: none;
+    text-decoration: none;
+    display: inline-flex;
+    margin-left: 7vw;
+    text-align: right;
+    font-family: 'Bangers', cursive;
+    font-size: 3vw;
+    letter-spacing: 0vw;
+    position: absolute;
+}
+
+.Pizzas li ul{
+    width: 20vw;
+    direction: rtl;    
+    float: inline-end;
+    padding-left: 10vw;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Bangers', cursive;
+    text-align: left;
+}

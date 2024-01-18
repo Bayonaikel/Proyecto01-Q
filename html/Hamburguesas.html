@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q Quality Foods</title>
+    <link href="../css/style-Hamburguesas.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <script src="https://kit.fontawesome.com/f9ea8365ba.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="Marca">
+        
+            <img class="LogotipoEmpresa" src="/img/Logo Q-Color - Cabecera.jpg" alt="Q logo" >
+            <div class="NombreEmpresa"><h1>Quality Foods</h1></div>
+        
+        </div>
+
+        <div class="BarraMenu">
+
+        <nav class="nav">
+
+            <ul class="nav__ul">
+                <li class="nav__ul__li"><i class="fa-solid fa-house"></i><a href="/index.html">Home</a></li>
+                <li class="nav__ul__li"><i class="fa-solid fa-people-group"></i><a href="">Nosotros</a></li>
+                <li class="nav__ul__li"><i class="fa-solid fa-comments"></i><a href="/html/Contacto.html">Contacto</a></li>
+                <li class="nav__ul__li"><i class="fa-solid fa-book-open"></i><a href="">Carta</a>
+                    <ul class="nav__ul__li__SubmenuCARTA">
+                        <li class="nav__ul__li__SubmenuCARTA__li"><i class="fa-solid fa-pepper-hot"></i><a href="">Ensaladas</a></li>
+                        <li class="nav__ul__li__SubmenuCARTA__li"><i class="fa-solid fa-bowl-food"></i><a href="">Entrantes</a></li>
+                        <li class="nav__ul__li__SubmenuCARTA__li"><i class="fa-solid fa-burger"></i><a href="/html/Hamburguesas.html">Hamburguesas</a></li>
+                        <li class="nav__ul__li__SubmenuCARTA__li"><i class="fa-solid fa-hotdog"></i><a href="">Hot dogs</a></li>
+                        <li class="nav__ul__li__SubmenuCARTA__li"><i class="fa-solid fa-pizza-slice"></i><a href="/html/Pizzas.html">Pizzas</a></li>
+                        <li class="nav__ul__li__SubmenuCARTA__li"><i class="fa-solid fa-glass-water"></i><a href="">Bebidas</a></li>
+                        <li class="nav__ul__li__SubmenuCARTA__li"><i class="fa-solid fa-ice-cream"></i><a href="">Postres y helados</a></li>
+                    </ul>
+                </li>
+                <li class="nav__ul__li"><i class="fa-solid fa-box-open"></i><a href="">Menus</a></li>
+                <li class="nav__ul__li"><i class="fa-solid fa-bullhorn"></i><a href="">Novedades</a></li>
+                <!-- <li class="nav__ul__li"><i class="fa-solid fa-cart-shopping"></i><a href="">Pedidos</a>
+                    <ul class="nav__ul__li__SubmenuPEDIDOS">
+                        <li class="nav__ul__li__SubmenuPEDIDOS__li"><i class="fa-solid fa-truck-fast"></i><a href="">Domicilio</a></li>
+                        <li class="nav__ul__li__SubmenuPEDIDOS__li"><i class="fa-solid fa-store"></i><a href="">Recoger</a></li>
+                        <li class="nav__ul__li__SubmenuPEDIDOS__li"><i class="fa-solid fa-magnifying-glass"></i><a href="">Seguimiento</a></li>
+                    </ul>
+                </li>    -->
+                <li class="nav__ul__li"><i class="fa-solid fa-user"></i><a href="">Regístrate</a></li>
+            </ul>
+
+            <!--*******************************************      Responsive       **********************************************************************************************-->
+            <ul class="resp-nav__ul">
+
+                <div class="resp-nav-button-container">
+                    <div class="resp-nav-button"><i class="fa-solid fa-bars"></i></div>
+                </div>
+
+                <div class="resp-nav__ul__li-container">
+                    <li class="resp-nav__ul__li"><i class="fa-solid fa-house"></i><a href="/index.html">Home</a></li>
+                    <li class="resp-nav__ul__li"><i class="fa-solid fa-people-group"></i><a href="">Nosotros</a></li>
+                    <li class="resp-nav__ul__li"><i class="fa-solid fa-comments"></i><a href="/html/Contacto.html">Contacto</a></li>
+                    <li class="Carta"><i class="fa-solid fa-book-open"></i><a href="">Carta</a>
+                        <ul class="resp-nav__ul__li__SubmenuCARTA">
+                            <li class="resp-nav__ul__li__SubmenuCARTA__li"><i class="fa-solid fa-pepper-hot"></i><a href="">Ensaladas</a></li>
+                            <li class="resp-nav__ul__li__SubmenuCARTA__li"><i class="fa-solid fa-bowl-food"></i><a href="">Entrantes</a></li>
+                            <li class="resp-nav__ul__li__SubmenuCARTA__li"><i class="fa-solid fa-burger"></i><a href="/html/Hamburguesas.html">Hamburguesas</a></li>
+                            <li class="resp-nav__ul__li__SubmenuCARTA__li"><i class="fa-solid fa-hotdog"></i><a href="">Hot dogs</a></li>
+                            <li class="resp-nav__ul__li__SubmenuCARTA__li"><i class="fa-solid fa-pizza-slice"></i><a href="/html/Pizzas.html">Pizzas</a></li>
+                            <li class="resp-nav__ul__li__SubmenuCARTA__li"><i class="fa-solid fa-glass-water"></i><a href="">Bebidas</a></li>
+                            <li class="resp-nav__ul__li__SubmenuCARTA__li"><i class="fa-solid fa-ice-cream"></i><a href="">Postres y helados</a></li>
+                        </ul>
+                    </li>
+                    <li class="resp-nav__ul__li"><i class="fa-solid fa-box-open"></i><a href="">Menus</a></li>
+                    <li class="resp-nav__ul__li"><i class="fa-solid fa-bullhorn"></i><a href="">Novedades</a></li>
+                    <!-- <li class="Pedidos"><i class="fa-solid fa-cart-shopping"></i><a href="">Pedidos</a>
+                        <ul class="resp-nav__ul__li__SubmenuPEDIDOS">
+                            <li class="resp-nav__ul__li__SubmenuPEDIDOS__li"><i class="fa-solid fa-truck-fast"></i><a href="">Domicilio</a></li>
+                            <li class="resp-nav__ul__li__SubmenuPEDIDOS__li"><i class="fa-solid fa-store"></i><a href="">Recoger</a></li>
+                            <li class="resp-nav__ul__li__SubmenuPEDIDOS__li"><i class="fa-solid fa-magnifying-glass"></i><a href="">Seguimiento</a></li>
+                        </ul>
+                    </li>    -->
+                    <li class="resp-nav__ul__li"><i class="fa-solid fa-user"></i><a href="">Regístrate</a></li>
+                </div>
+
+            </ul>
+
+        </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <div class="Hamburguesas">
+
+        <li>
+            <h2>SINGULAR</h2>
+            <div class="Detalle">
+            <div class="Foto">
+                <img src="/img/Hamburguesas/01-Singular.jpg">
+            </div>
+            <h3>9'80 €</h3>
+            <ul>
+                <li>Salsa barbacoa</li>
+                <li>Queso</li>
+                <li>Champiñones</li>
+                <li>Bacon</li>
+                <li>Carne picada (Ternera)</li>
+            </ul>    
+        </div>   
+        </li>
+
+        <li>
+            <h2>SATISFACTION</h2>
+            <div class="Detalle">
+            <div class="Foto">
+                <img src="/img/Hamburguesas/02-Satisfaction.jpg">
+            </div>
+            <h3>8'50 €</h3>
+            <ul>
+                <li>Salsa de tomate</li>
+                <li>Pimiento verde</li>
+                <li>Cebolla</li>
+                <li>Peperoni</li>
+                <li>Queso</li>
+            </ul>    
+        </div>   
+        </li>
+
+        <li>
+            <h2>LOSER</h2>
+            <div class="Detalle">
+            <div class="Foto">
+                <img src="/img/Hamburguesas/04-Loser.jpg">
+            </div>
+            <h3>8'50 €</h3>
+        <ul>
+                <li>Salsa de tomate</li>
+                <li>Champiñones</li>
+                <li>Carne picada (Ternera)</li>
+                <li>Queso</li>
+            </ul>   
+        </div>    
+        </li>
+
+        <li>
+            <h2>CHEESEBURGUER</h2>
+            <div class="Detalle">
+            <div class="Foto">
+                <img src="/img/Hamburguesas/05-Cheeseburguer.jpg">
+            </div>
+            <h3>8'40 €</h3>
+            <ul>
+                <li>Salsa de tomate</li>
+                <li>Champiñones</li>
+                <li>Jamón cocido</li>
+                <li>Queso</li>
+            </ul>    
+        </div>   
+        </li>
+
+        <li>
+            <h2>VEGGIE</h2>
+            <div class="Detalle">
+            <div class="Foto">
+                <img src="/img/Hamburguesas/08-Veggie.jpg">
+            </div>
+            <h3>8'80 €</h3>
+            <ul>
+                <li>Bacon</li>
+                <li>Cebolla</li>
+                <li>Jamón cocido</li>
+                <li>Queso</li>
+                <li>Nata</li>
+            </ul> 
+        </div>   
+        </li>
+
+        <li>
+            <!-- <h2>CARUSO</h2>
+            <img src="/img/Hamburguesas/01-Singular.jpg">
+            <h3>9'80 €</h3>
+            <ul>
+                <li>Aceitunas negras</li>
+                <li>Salsa de tomate</li>
+                <li>Jamón serrano</li>
+                <li>Piña</li>
+                <li>Queso</li>
+            </ul>    
+        </li>
+
+        <li>
+            <h2>MARGARITA</h2>
+            <img src="/img/Hamburguesas/01-Singular.jpg">
+            <h3>7'30 €</h3>
+            <ul>
+                <li>Salsa de tomate</li>
+                <li>Queso</li>
+            </ul>    
+        </li>
+
+        <li>
+            <h2>CUATRO QUESOS</h2>
+            <img src="/img/Hamburguesas/01-Singular.jpg">
+            <h3>9'30 €</h3>
+            <ul>
+                <li>Salsa de tomate</li>
+                <li>Mozarella </li>
+                <li>Roquefort </li>
+                <li>Robiola </li>
+                <li>Parmesano </li>
+            </ul>    
+        </li>
+
+        <li> -->
+            <!-- <h2>VERDI</h2>
+            <img src="/img/Hamburguesas/30-Verdi.png">
+            <h3>9'20 €</h3>
+            <ul>
+                <li>Tomate fresco</li>
+                <li>Salsa de tomate</li>
+                <li>Pimiento verde</li>
+                <li>Carne picada (Ternera)</li>
+                <li>Cebolla</li>
+                <li>Queso</li>
+            </ul>    
+        </li> -->
+
+        <!-- <li>
+            <h2>BARBACOA</h2>
+            <img src="/img/Hamburguesas/01-Barbacoa.png">
+            <h3>9'80 €</h3>
+            <ul>
+                <li>Salsa barbacoa</li>
+                <li>queso</li>
+                <li>champiñones</li>
+                <li>bacon</li>
+                <li>carne picada de ternera</li>
+            </ul>    
+        </li>
+
+        <li>
+            <h2>BARBACOA</h2>
+            <img src="/img/Hamburguesas/01-Barbacoa.png">
+            <h3>9'80 €</h3>
+            <ul>
+                <li>Salsa barbacoa</li>
+                <li>queso</li>
+                <li>champiñones</li>
+                <li>bacon</li>
+                <li>carne picada de ternera</li>
+            </ul>    
+        </li>
+
+        <li>
+            <h2>BARBACOA</h2>
+            <img src="/img/Hamburguesas/01-Barbacoa.png">
+            <h3>9'80 €</h3>
+            <ul>
+                <li>Salsa barbacoa</li>
+                <li>queso</li>
+                <li>champiñones</li>
+                <li>bacon</li>
+                <li>carne picada de ternera</li>
+            </ul>    
+        </li>
+
+        <li>
+            <h2>BARBACOA</h2>
+            <img src="/img/Hamburguesas/01-Barbacoa.png">
+            <h3>9'80 €</h3>
+            <ul>
+                <li>Salsa barbacoa</li>
+                <li>queso</li>
+                <li>champiñones</li>
+                <li>bacon</li>
+                <li>carne picada de ternera</li>
+            </ul>    
+        </li>
+
+        <li>
+            <h2>BARBACOA</h2>
+            <img src="/img/Hamburguesas/01-Barbacoa.png">
+            <h3>9'80 €</h3>
+            <ul>
+                <li>Salsa barbacoa</li>
+                <li>queso</li>
+                <li>champiñones</li>
+                <li>bacon</li>
+                <li>carne picada de ternera</li>
+            </ul>    
+        </li>
+
+        <li>
+            <h2>BARBACOA</h2>
+            <img src="/img/Hamburguesas/01-Barbacoa.png">
+            <h3>9'80 €</h3>
+            <ul>
+                <li>Salsa barbacoa</li>
+                <li>queso</li>
+                <li>champiñones</li>
+                <li>bacon</li>
+                <li>carne picada de ternera</li>
+            </ul>    
+        </li>
+
+        <li>
+            <h2>BARBACOA</h2>
+            <img src="/img/Hamburguesas/01-Barbacoa.png">
+            <h3>9'80 €</h3>
+            <ul>
+                <li>Salsa barbacoa</li>
+                <li>queso</li>
+                <li>champiñones</li>
+                <li>bacon</li>
+                <li>carne picada de ternera</li>
+            </ul>    
+        </li>
+
+        <li>
+            <h2>BARBACOA</h2>
+            <img src="/img/Hamburguesas/01-Barbacoa.png">
+            <h3>9'80 €</h3>
+            <ul>
+                <li>Salsa barbacoa</li>
+                <li>queso</li>
+                <li>champiñones</li>
+                <li>bacon</li>
+                <li>carne picada de ternera</li>
+            </ul>    
+        </li>
+
+        <li>
+            <h2>BARBACOA</h2>
+            <img src="/img/Hamburguesas/01-Barbacoa.png">
+            <h3>9'80 €</h3>
+            <ul>
+                <li>Salsa barbacoa</li>
+                <li>queso</li>
+                <li>champiñones</li>
+                <li>bacon</li>
+                <li>carne picada de ternera</li>
+            </ul>    
+        </li>
+
+        <li>
+            <h2>BARBACOA</h2>
+            <img src="/img/Hamburguesas/01-Barbacoa.png">
+            <h3>9'80 €</h3>
+            <ul>
+                <li>Salsa barbacoa</li>
+                <li>queso</li>
+                <li>champiñones</li>
+                <li>bacon</li>
+                <li>carne picada de ternera</li>
+            </ul>    
+        </li>
+
+        <li>
+            <h2>BARBACOA</h2>
+            <img src="/img/Hamburguesas/01-Barbacoa.png">
+            <h3>9'80 €</h3>
+            <ul>
+                <li>Salsa barbacoa</li>
+                <li>queso</li>
+                <li>champiñones</li>
+                <li>bacon</li>
+                <li>carne picada de ternera</li>
+            </ul>    
+        </li>
+
+        <li>
+            <h2>BARBACOA</h2>
+            <img src="/img/Hamburguesas/01-Barbacoa.png">
+            <h3>9'80 €</h3>
+            <ul>
+                <li>Salsa barbacoa</li>
+                <li>queso</li>
+                <li>champiñones</li>
+                <li>bacon</li>
+                <li>carne picada de ternera</li>
+            </ul>    
+        </li>
+
+        <li>
+            <h2>BARBACOA</h2>
+            <img src="/img/Hamburguesas/01-Barbacoa.png">
+            <h3>9'80 €</h3>
+            <ul>
+                <li>Salsa barbacoa</li>
+                <li>queso</li>
+                <li>champiñones</li>
+                <li>bacon</li>
+                <li>carne picada de ternera</li>
+            </ul>    
+        </li>
+
+        <li>
+            <h2>BARBACOA</h2>
+            <img src="/img/Hamburguesas/01-Barbacoa.png">
+            <h3>9'80 €</h3>
+            <ul>
+                <li>Salsa barbacoa</li>
+                <li>queso</li>
+                <li>champiñones</li>
+                <li>bacon</li>
+                <li>carne picada de ternera</li>
+            </ul>    
+        </li>
+
+        <li>
+            <h2>BARBACOA</h2>
+            <img src="/img/Hamburguesas/01-Barbacoa.png">
+            <h3>9'80 €</h3>
+            <ul>
+                <li>Salsa barbacoa</li>
+                <li>queso</li>
+                <li>champiñones</li>
+                <li>bacon</li>
+                <li>carne picada de ternera</li>
+            </ul>    
+        </li>
+
+        <li>
+            <h2>BARBACOA</h2>
+            <img src="/img/Hamburguesas/01-Barbacoa.png">
+            <h3>9'80 €</h3>
+            <ul>
+                <li>Salsa barbacoa</li>
+                <li>queso</li>
+                <li>champiñones</li>
+                <li>bacon</li>
+                <li>carne picada de ternera</li>
+            </ul>    
+        </li>
+
+        <li>
+            <h2>BARBACOA</h2>
+            <img src="/img/Hamburguesas/01-Barbacoa.png">
+            <h3>9'80 €</h3>
+            <ul>
+                <li>Salsa barbacoa</li>
+                <li>queso</li>
+                <li>champiñones</li>
+                <li>bacon</li>
+                <li>carne picada de ternera</li>
+            </ul>    
+        </li>
+
+        <li>
+            <h2>BARBACOA</h2>
+            <img src="/img/Hamburguesas/01-Barbacoa.png">
+            <h3>9'80 €</h3>
+            <ul>
+                <li>Salsa barbacoa</li>
+                <li>queso</li>
+                <li>champiñones</li>
+                <li>bacon</li>
+                <li>carne picada de ternera</li>
+            </ul>    
+        </li> -->
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+</body>
+
+</html>
