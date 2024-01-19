@@ -13,7 +13,14 @@ body {
     min-width: 100vw;
     margin: 0vw auto;
     background-image: linear-gradient(to right, rgb(255, 215, 0) ,rgb(255, 215, 0),rgb(255, 215, 0),rgb(255, 215, 0)  ,rgb(180, 255, 255),rgb(180, 255, 255));
+    overflow-x: hidden;
 }
+
+.header{
+    position: fixed;
+    z-index: 1000;
+}
+
 
 .Marca {
     display: flex;
@@ -21,11 +28,13 @@ body {
     background-image: linear-gradient(to right, rgb(255, 215, 0) ,rgb(255, 215, 0),rgb(255, 215, 0),rgb(255, 215, 0)  ,rgb(180, 255, 255),rgb(180, 255, 255));
     margin: 0vw;
     margin-bottom: 2vw;
+    position: fixed;
+    z-index: 100;
 }
 
 .LogotipoEmpresa {
-    width: calc(10px + 10vw);
-    height: calc(10px + 10vw);
+    width: calc(10px + 9vw);
+    height: calc(10px + 9vw);
     padding-top: 1vw;
     padding-left: 1vw;
 }
@@ -34,10 +43,17 @@ body {
     font-family: 'Permanent Marker', cursive;
     font-size: 3.5vw;
     align-self: center;
-    margin-left: 2vw;    
+    margin-left: 2vw; 
 }
 
 /* *******************************************************************   Navegacion   ************************************************************** */
+
+.BarraMenu{
+    position: fixed;
+    z-index: 100;
+    padding-top: 10vw;
+}
+
 
 .nav{
     width: 100vw;
@@ -49,10 +65,11 @@ body {
     font-family: 'Bangers', cursive;
     justify-content: space-evenly;
     background-image: linear-gradient(to right, rgb(255, 215, 0) ,rgb(255, 215, 0),rgb(255, 215, 0),rgb(255, 215, 0)  ,rgb(180, 255, 255),rgb(180, 255, 255));
-    height: 3vw;
+    height: 2vw;
     list-style: none;
     display: flex;
     text-align: left;
+    line-height: 2vw;
 }
 
 .nav__ul__li{
@@ -265,12 +282,11 @@ body {
     .nav__ul {
         display: none;
     }
-    .nav{
+    .navigation{
         height: 5vw;
         width: 100vw;
     }
     .resp-nav__ul {
-        
         display: block;
         position: absolute;
         width: 100vw;
@@ -302,7 +318,7 @@ body {
 
     /* .resp-nav__ul__li__SubmenuPEDIDOS{
         display: none;
-    }     */
+    } */
 }   
 
 /* ****************************************************************   AlPasarPorEncima   ************************************************************ */
