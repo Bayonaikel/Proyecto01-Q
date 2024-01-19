@@ -11,16 +11,18 @@
 
 <body>
 
-    <div class="Marca">
-    
-        <img class="LogotipoEmpresa" src="../img/Logo Q-Color - Cabecera.jpg" alt="Q logo" >
-        <div class="NombreEmpresa"><h1>Quality Foods</h1></div>
-    
-    </div>
-
     <header>
 
-        <div class="nav">
+        <div class="Marca">
+        
+            <img class="LogotipoEmpresa" src="../img/Logo Q-Color - Cabecera.jpg" alt="Q logo" >
+            <div class="NombreEmpresa"><h1>Quality Foods</h1></div>
+        
+        </div>
+
+        <div class="BarraMenu">
+
+        <nav class="nav">
 
             <ul class="nav__ul">
                 <li class="nav__ul__li"><i class="fa-solid fa-house"></i><a href="../index.html">Home</a></li>
@@ -85,44 +87,50 @@
 
             </ul>
 
+        </nav>
+
         </div>
 
     </header>
 
-    <div class="Aviso"><h2>Rellena los datos del formulario y nos pondremos en contacto lo antes posible</h2></div>
+    <div class="Contacto">
 
-    <div class="flex-container">
+        <div class="Aviso"><h2>Rellena los datos del formulario y nos pondremos en contacto lo antes posible</h2></div>
 
-        <form class="formulario">
+        <div class="flex-container">
 
-            <div class="form__section">
-                <input type="text" name="Name" class="form__input" placeholder="  Nombre">
+            <form class="formulario">
+
+                <div class="form__section">
+                    <input type="text" name="Name" class="form__input" placeholder="  Nombre">
+                </div>
+
+                <div class="form__section">
+                    <input type="text" name="Firstname" class="form__input" placeholder="  Apellidos">
+                </div>
+
+                <div class="form__section">
+                    <input type="email" name="E-Mail" class="form__input" placeholder="  Correo electrónico">
+                </div>
+
+                <div class="form__section">
+                    <input type="number" name="Phone" class="form__input" placeholder="  Teléfono">
+                </div>
+
+                <div class="form__section">
+                    <textarea class="form__textarea" placeholder="Cuentanos en que podemos ayudarte"></textarea>
+                </div>
+
+            </form>
+
+            <div class="form-img">
+                <img src="../img/Sobre.png">
+                <input type="submit" class="form__send" href="mailto:mibayona.val@gmail.com">
             </div>
 
-            <div class="form__section">
-                <input type="text" name="Firstname" class="form__input" placeholder="  Apellidos">
-            </div>
-
-            <div class="form__section">
-                <input type="email" name="E-Mail" class="form__input" placeholder="  Correo electrónico">
-            </div>
-
-            <div class="form__section">
-                <input type="number" name="Phone" class="form__input" placeholder="  Teléfono">
-            </div>
-
-            <div class="form__section">
-                <textarea class="form__textarea" placeholder="Cuentanos en que podemos ayudarte"></textarea>
-            </div>
-
-        </form>
-
-        <div class="form-img">
-            <img src="../img/Sobre.png">
-            <input type="submit" class="form__send" href="mailto:mibayona.val@gmail.com">
         </div>
 
-    </div>
+</div>
 
 </body>
 
