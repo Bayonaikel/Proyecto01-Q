@@ -215,6 +215,8 @@ body {
     display: block;
     position: relative;
     font-size: calc(3px + 3vw);
+    background-color: rgb(255, 215, 0);
+    color: black;
 }
 
 .resp-nav__ul__li-container li i{
@@ -246,6 +248,8 @@ body {
     position: static;
     width: 40vw;
     box-sizing: content-box;
+    background-color: rgb(255, 215, 0);
+    color: black;
 }
 
 /* #resp-nav__ul__li__SubmenuPEDIDOS{
@@ -374,7 +378,7 @@ body {
     display: flex;
     position: relative;
     padding-left: 0vw;
-    padding-top: 12vw;
+    padding-top: 15vw;
     float: none;
     list-style: none;
     text-decoration: none;

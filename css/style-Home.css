@@ -213,6 +213,8 @@ body {
     margin-top: 0vw;
     float: left;
     z-index: 100;
+    background-color: rgb(255, 215, 0);
+    color: black;
 }
 
 .resp-nav__ul__li-container li{
@@ -251,6 +253,8 @@ body {
     width: 40vw;
     box-sizing: content-box;
     z-index: 100;
+    background-color: rgb(255, 215, 0);
+    color: black;
 }
 
 /* #resp-nav__ul__li__SubmenuPEDIDOS{
