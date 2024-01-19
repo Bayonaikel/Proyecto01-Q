@@ -13,14 +13,13 @@ body {
     min-width: 100vw;
     margin: 0vw auto;
     background-image: linear-gradient(to right, rgb(255, 215, 0) ,rgb(255, 215, 0),rgb(255, 215, 0),rgb(255, 215, 0)  ,rgb(180, 255, 255),rgb(180, 255, 255));
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .header{
     position: fixed;
     z-index: 1000;
 }
-
 
 .Marca {
     display: flex;
@@ -29,7 +28,6 @@ body {
     margin: 0vw;
     margin-bottom: 2vw;
     position: fixed;
-    z-index: 100;
 }
 
 .LogotipoEmpresa {
@@ -371,28 +369,43 @@ body {
 
 /* ****************************************************************   Contacto   ************************************************************ */
 
+.Contacto{
+    height: 100vw;
+    display: flex;
+    position: relative;
+    padding-left: 0vw;
+    padding-top: 12vw;
+    float: none;
+    list-style: none;
+    text-decoration: none;
+    z-index: -1;
+}
+
 .Aviso{
-    width: 90vw;
+    width: 100vw;
     padding-top: 1vw;
     padding-left: 5vw;
+    margin-top: 0vw;
     margin-bottom: 1vw;
     align-content: flex-start;
     font-family: 'Bangers', cursive;
     font-size: 1.5vw;
     color: rgb(0, 100, 255);
     text-align: center;
+    display: flex;
+    position: absolute;
 }
 
 
 .flex-container{
     display: flex;
-    position: relative;
+    position: absolute;
     width: 85vw;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
     background: black;
-    margin: 0vw 5vw;
+    margin: 5vw 5vw;
 }
 
 .form{
@@ -406,10 +419,8 @@ body {
 .form__input{
     height: 2vw;
     width: 60vw;
-    /* padding: 1vw; */
     margin-top: 1vw;
     margin-right: 1vw;
-    /* margin-bottom: 1vw; */
     margin-left: 1vw;
     font-family: 'Bangers', cursive;
     font-size: 1vw;
@@ -421,7 +432,6 @@ body {
     border-style: double;
     font-weight: bolder;
 }
-
 
 .form-img{
     flex: 1;
